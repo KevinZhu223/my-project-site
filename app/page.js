@@ -1,0 +1,209 @@
+'use client';
+import Link from 'next/link';
+import { useState } from 'react';
+import ProjectCard from '../components/ProjectCard';
+import AboutSection from '../components/AboutSection';
+import Footer from '../components/Footer';
+
+export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // Kevin's projects data
+  const projects = [
+    {
+      title: "E-Commerce Platform",
+      description: "A full-stack e-commerce solution with user authentication, payment processing, and inventory management. Built with modern web technologies for optimal performance.",
+      techStack: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
+      liveUrl: "https://your-ecommerce-demo.com",
+      githubUrl: "https://github.com/KevinZhu223/ecommerce-platform"
+    },
+    {
+      title: "Data Analytics Dashboard",
+      description: "Interactive dashboard for visualizing complex datasets with real-time updates. Features advanced filtering, interactive charts, and export capabilities.",
+      techStack: ["React", "Python", "Flask", "D3.js", "Pandas"],
+      liveUrl: "https://your-dashboard-demo.com",
+      githubUrl: "https://github.com/KevinZhu223/analytics-dashboard"
+    },
+    {
+      title: "Machine Learning Model",
+      description: "A predictive model developed to analyze customer purchasing patterns using ensemble methods, achieving 85% accuracy in behavior prediction and recommendation systems.",
+      techStack: ["Python", "Scikit-learn", "TensorFlow", "Docker"],
+      liveUrl: "https://your-ml-demo.com",
+      githubUrl: "https://github.com/KevinZhu223/ml-customer-analysis"
+    },
+    {
+      title: "Mobile Task Manager",
+      description: "Cross-platform mobile application for task management with offline sync, push notifications, and collaborative features.",
+      techStack: ["React Native", "Expo", "Firebase", "Node.js"],
+      liveUrl: "https://your-taskmanager-demo.com",
+      githubUrl: "https://github.com/KevinZhu223/task-manager"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-white dark:bg-gray-900">
+      {/* Navigation */}
+      <header className="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700 shadow-sm">
+        <div className="flex justify-between items-center px-6 py-4 w-full">
+          <div className="text-xl font-bold text-gray-900 dark:text-white">
+            Portfolio
+          </div>
+          <nav className="hidden md:flex gap-6">
+            <Link href="#home" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
+              Home
+            </Link>
+            <Link href="#projects" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
+              Projects
+            </Link>
+            <Link href="#about" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
+              About
+            </Link>
+            <Link href="#contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
+              Contact
+            </Link>
+          </nav>
+            
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none focus:text-blue-600 dark:focus:text-blue-400"
+            >
+              <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                {isMenuOpen ? (
+                  <path fillRule="evenodd" clipRule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                ) : (
+                  <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                )}
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        {/* Mobile menu */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-700">
+            <nav className="px-6 py-4 space-y-2">
+              <Link
+                href="#home"
+                className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                href="#projects"
+                className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Projects
+              </Link>
+              <Link
+                href="#about"
+                className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+              <Link
+                href="#contact"
+                className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </nav>
+          </div>
+        )}
+      </header>
+
+      {/* Hero Section */}
+      <section id="home" className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-slate-900 dark:to-gray-800">
+        <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium mb-4">
+              👋 Welcome to my portfolio
+            </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+              Hello, I'm{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600">
+                Kevin Zhu
+              </span>
+            </h1>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+              Software Engineer & Data Scientist passionate about building innovative solutions that bridge technology and real-world impact.
+            </p>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link
+              href="#projects"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              🚀 View My Projects
+            </Link>
+            <Link
+              href="https://github.com/KevinZhu223"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-2 border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              💻 GitHub Profile
+            </Link>
+          </div>
+          
+          {/* Quick stats */}
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto">
+            <div className="text-center bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl p-4 border border-white/20 dark:border-gray-700/20">
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">3+</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Years Experience</div>
+            </div>
+            <div className="text-center bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl p-4 border border-white/20 dark:border-gray-700/20">
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">10+</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Projects Completed</div>
+            </div>
+            <div className="text-center bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl p-4 border border-white/20 dark:border-gray-700/20">
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">CS</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Lehigh University</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="flex flex-col items-center justify-center py-20 bg-gray-50 dark:bg-gray-900">
+        <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium mb-4">
+              🚀 My Work
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Featured Projects
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center">
+              {/*Showcasing recent work in software engineering and data science.*/}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                description={project.description}
+                techStack={project.techStack}
+                liveUrl={project.liveUrl}
+                githubUrl={project.githubUrl}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <AboutSection />
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
+}
