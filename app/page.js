@@ -10,18 +10,18 @@ export default function Home() {
   // Kevin's projects data
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with user authentication, payment processing, and inventory management. Built with modern web technologies for optimal performance.",
-      techStack: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
-      liveUrl: "https://your-ecommerce-demo.com",
-      githubUrl: "https://github.com/KevinZhu223/ecommerce-platform"
+      title: "Lexi-Lens",
+      description: "Web platform helping immigrants understand legal documents, with image uploads, Spanish translation, and AI-powered analysis and chat.",
+      techStack: ["Python", "FastAPI", "OpenAI GPT (0.1)", "Google Cloud", "HTML", "CSS", "JavaScript"],
+      liveUrl: "https://drive.google.com/file/d/1v8LuXYSE5VxvMRy685G5gt2h7SlbD5li/view?usp=sharing",
+      githubUrl: "https://github.com/KevinZhu223/Nautica"
     },
     {
-      title: "Data Analytics Dashboard",
-      description: "Interactive dashboard for visualizing complex datasets with real-time updates. Features advanced filtering, interactive charts, and export capabilities.",
-      techStack: ["React", "Python", "Flask", "D3.js", "Pandas"],
-      liveUrl: "https://your-dashboard-demo.com",
-      githubUrl: "https://github.com/KevinZhu223/analytics-dashboard"
+      title: "Predicting Police Action Severity",
+      description: "Analyzed 5.6M+ police records from 15 U.S. cities to predict interaction outcomes. Built a Random Forest model in R (~87% validation accuracy), engineered features like city median income, and visualized results with ggplot2.",
+      techStack: ["R", "Random Forest", "ggplot2", "GitHub"],
+      liveUrl: "https://1drv.ms/p/c/82af644eee7671ba/EQHiZFcMmLxMs7yW7PY0eD4BmcaxYkUU59UoJmN37HUkUA?e=ED20uD",
+      githubUrl: "https://github.com/KevinZhu223/forkliftuncertified"
     },
     {
       title: "Machine Learning Model",
@@ -158,7 +158,7 @@ export default function Home() {
               <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Years Experience</div>
             </div>
             <div className="text-center bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl p-4 border border-white/20 dark:border-gray-700/20">
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">10+</div>
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">5+</div>
               <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Projects Completed</div>
             </div>
             <div className="text-center bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl p-4 border border-white/20 dark:border-gray-700/20">

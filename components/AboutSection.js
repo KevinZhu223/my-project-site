@@ -10,7 +10,6 @@ export default function AboutSection() {
             Get to Know Me
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Software engineer and data scientist building innovative solutions.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-blue-500 mx-auto mt-8 rounded-full"></div>
         </div>
@@ -53,7 +52,7 @@ export default function AboutSection() {
               
               <div className="mb-8">
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
-                  <span className="mr-2">🏦</span> Education
+                  <span className="mr-2"></span> Education
                 </h4>
                 <p className="text-gray-700 dark:text-gray-300 text-base leading-relaxed">
                   Lehigh University, Junior pursuing a B.S. in Computer Science with a minor in Data Science
@@ -62,15 +61,15 @@ export default function AboutSection() {
               
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-6 flex items-center">
-                  <span className="mr-2">🛠️</span> Technical Skills
+                  <span className="mr-2"></span> Technical Skills
                 </h4>
                 <div className="space-y-6">
                   <div>
                     <h5 className="font-semibold text-blue-600 dark:text-blue-400 mb-3 flex items-center">
-                      <span className="mr-2">💻</span> Software Engineering
+                      <span className="mr-2"></span> Software Engineering
                     </h5>
                     <div className="flex flex-wrap gap-2">
-                      {['JavaScript/TypeScript', 'React/Next.js', 'Node.js', 'Python', 'Java'].map((skill, index) => (
+                      {['JavaScript', 'React/Next.js', 'Node.js', 'Python', 'Java', "C/C++", "SQL"].map((skill, index) => (
                         <span key={index} className="px-3 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-lg font-medium border border-blue-200 dark:border-blue-700 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors duration-200">
                           {skill}
                         </span>
@@ -79,10 +78,10 @@ export default function AboutSection() {
                   </div>
                   <div>
                     <h5 className="font-semibold text-green-600 dark:text-green-400 mb-3 flex items-center">
-                      <span className="mr-2">📊</span> Data Science
+                      <span className="mr-2"></span> Data Science
                     </h5>
                     <div className="flex flex-wrap gap-2">
-                      {['Machine Learning', 'Data Analysis', 'Statistical Modeling', 'Data Visualization', 'Tableau', 'Matplotlib'].map((skill, index) => (
+                      {['R', 'Biostatistics/Clinical Trials','Machine Learning', 'Data Analysis', 'Statistical Modeling', 'Data Visualization'].map((skill, index) => (
                         <span key={index} className="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-lg font-medium border border-green-200 dark:border-green-700 hover:bg-green-200 dark:hover:bg-green-800 transition-colors duration-200">
                           {skill}
                         </span>
