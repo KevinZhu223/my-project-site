@@ -27,13 +27,13 @@ export default function AboutSection() {
                 </h3>
               </div>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4 text-base">
-                I'm a passionate software engineer and data scientist with a strong foundation in 
+                I&apos;m a passionate software engineer and data scientist with a strong foundation in 
                 building scalable applications and extracting meaningful insights from complex datasets. 
                 My journey in technology combines analytical thinking with creative problem-solving.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
                 I enjoy working on projects that bridge the gap between technical innovation and 
-                real-world impact, whether it's developing web applications or implementing machine 
+                real-world impact, whether it&apos;s developing web applications or implementing machine 
                 learning solutions.
               </p>
             </div>

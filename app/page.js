@@ -124,7 +124,7 @@ export default function Home() {
               👋 Welcome to my portfolio
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-              Hello, I'm{' '}
+              Hello, I&apos;m{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600">
                 Kevin Zhu
               </span>
