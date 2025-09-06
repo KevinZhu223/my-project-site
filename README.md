@@ -1,36 +1,149 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kevin Zhu - Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website showcasing my projects and skills as a Software Engineer and Data Scientist.
 
-First, run the development server:
+## 🚀 Live Demo
 
+[View Live Site](https://your-portfolio-url.com) <!-- Update with your actual deployment URL -->
+
+## 📋 Overview
+
+This portfolio website features:
+- **Responsive Design**: Optimized for mobile, tablet, and desktop
+- **Modern UI/UX**: Clean, professional design with smooth animations
+- **Project Showcase**: Featured projects with live demos and GitHub links
+- **Interactive Elements**: Hover effects, transitions, and copy-to-clipboard functionality
+- **Dark Mode Support**: Automatic dark/light mode based on system preference
+- **Performance Optimized**: Built with Next.js for fast loading and SEO
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/) (React)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Font**: [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts
+- **Deployment**: [Vercel](https://vercel.com/) (recommended)
+- **Version Control**: Git & GitHub
+
+## 🎨 Features
+
+### Hero Section
+- Professional introduction with gradient text effects
+- Call-to-action buttons with hover animations
+- Quick stats cards with hover effects
+
+### Projects Section
+- Grid layout showcasing 4 featured projects
+- Project cards with consistent styling and hover effects
+- Live demo and GitHub repository links
+- Technology stack tags for each project
+
+### About Section
+- Professional background information
+- Skills categorized by domain (Software Engineering, Data Science)
+- Education details
+
+### Footer
+- Contact information with copy-to-clipboard email functionality
+- Social media links (GitHub, LinkedIn)
+- Professional footer with copyright
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/KevinZhu223/my-project-site.git
+cd my-project-site
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/
+│   ├── globals.css          # Global styles and custom CSS
+│   ├── layout.js           # Root layout component
+│   └── page.js             # Main page component
+├── components/
+│   ├── AboutSection.js     # About section component
+│   ├── Footer.js           # Footer with contact links
+│   └── ProjectCard.js      # Reusable project card component
+├── public/                 # Static assets
+└── README.md
+```
 
-## Learn More
+## 🎯 Key Components
 
-To learn more about Next.js, take a look at the following resources:
+### ProjectCard
+Reusable component for displaying project information:
+- Project title and description
+- Technology stack tags
+- Live demo and GitHub links
+- Consistent hover animations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Footer
+Interactive footer with:
+- Copy-to-clipboard email functionality
+- Social media links
+- Professional styling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Styling Approach
 
-## Deploy on Vercel
+- **Tailwind CSS**: Utility-first CSS framework
+- **Custom CSS Variables**: Consistent color scheme
+- **Responsive Design**: Mobile-first approach
+- **Smooth Animations**: CSS transitions and hover effects
+- **Professional Typography**: Inter font family
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 Responsive Design
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Mobile**: Single column layout, stacked elements
+- **Tablet**: Two-column project grid, optimized spacing
+- **Desktop**: Full layout with optimal spacing and hover effects
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Deploy automatically on every push to main branch
+
+### Other Platforms
+This Next.js app can be deployed on:
+- Netlify
+- AWS Amplify
+- GitHub Pages (with static export)
+
+## 📧 Contact
+
+- **Email**: kevinzhu2234@gmail.com
+- **GitHub**: [@KevinZhu223](https://github.com/KevinZhu223)
+- **LinkedIn**: [kevin-zhu-lehigh](https://linkedin.com/in/kevin-zhu-lehigh)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Built with ❤️ by Kevin Zhu using Next.js & Tailwind CSS
