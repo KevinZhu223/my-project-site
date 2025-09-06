@@ -24,18 +24,18 @@ export default function Home() {
       githubUrl: "https://github.com/KevinZhu223/forkliftuncertified"
     },
     {
-      title: "Machine Learning Model",
-      description: "A predictive model developed to analyze customer purchasing patterns using ensemble methods, achieving 85% accuracy in behavior prediction and recommendation systems.",
-      techStack: ["Python", "Scikit-learn", "TensorFlow", "Docker"],
+      title: "Resume Tailor",
+      description: "Developed an AI-powered resume tailoring tool that analyzes job descriptions, rewrites bullet points, and generates skill gap recommendations using Python and OpenAI.Developed an AI-powered resume tailoring tool that analyzes job descriptions, rewrites bullet points, and generates skill gap recommendations using Python and OpenAI.",
+      techStack: ["Python", "streamlit", "OpenAI API", "Regex", "NLP"],
       liveUrl: "https://your-ml-demo.com",
-      githubUrl: "https://github.com/KevinZhu223/ml-customer-analysis"
+      githubUrl: "https://github.com/KevinZhu223/Resume-Tailor"
     },
     {
-      title: "Mobile Task Manager",
-      description: "Cross-platform mobile application for task management with offline sync, push notifications, and collaborative features.",
-      techStack: ["React Native", "Expo", "Firebase", "Node.js"],
+      title: "Stock Market Analysis",
+      description: "stock market analysis tool that combines technical analysis, sentiment analysis, and machine learning to analyze stocks and generate trading insights.",
+      techStack: ["Python", "Scikit-learn", "NumPy", "Pandas", "Matplotlib", "Seaborn"],
       liveUrl: "https://your-taskmanager-demo.com",
-      githubUrl: "https://github.com/KevinZhu223/task-manager"
+      githubUrl: "https://github.com/KevinZhu223/StockMarketAnalysis"
     }
   ];
 
