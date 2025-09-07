@@ -1,87 +1,71 @@
-Kevin Zhu – Portfolio Website
+# Kevin Zhu – Portfolio Website
 
 A modern, responsive portfolio website built with Next.js and Tailwind CSS, designed to showcase my projects, technical skills, and professional background as a Software Engineer and Data Scientist.
 
-Live Demo
+##  Live Demo
 
-View Portfolio
-https://my-project-site-nu.vercel.app/
+[View Portfolio](https://my-project-site-nu.vercel.app/)
 
-Overview
+##  Overview
 
 This website serves as a central hub for my professional work, highlighting:
 
-Responsive Design: Optimized for mobile, tablet, and desktop
+- **Responsive Design**: Optimized for mobile, tablet, and desktop
+- **Modern UI/UX**: Clean layout, smooth animations, and professional styling
+- **Project Showcase**: Featured projects with live demos and GitHub repositories
+- **About & Skills**: Background, education, and categorized technical skills
+- **Interactive Elements**: Hover effects, transitions, and copy-to-clipboard functionality
+- **Dark Mode Support**: Adapts to system preference automatically
+- **SEO & Performance Optimized**: Leveraging Next.js capabilities for speed and visibility
 
-Modern UI/UX: Clean layout, smooth animations, and professional styling
+##  Tech Stack
 
-Project Showcase: Featured projects with live demos and GitHub repositories
+- **CodeBase**: JavaScript
+- **Framework**: [Next.js 14](https://nextjs.org/) – React-based, server-side rendering, and SEO friendly
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) – Utility-first styling for responsive design
+- **Font**: [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts
+- **Deployment**: [Vercel](https://vercel.com/) – Continuous deployment and hosting
+- **Version Control**: Git & GitHub – For collaboration and source management
 
-About & Skills: Background, education, and categorized technical skills
+##  Usage
 
-Interactive Elements: Hover effects, transitions, and copy-to-clipboard functionality
+- Visit the live website to explore my portfolio, projects, and contact info.
+- Clone the repo and run locally to customize it as your own portfolio (see setup instructions below).
 
-Dark Mode Support: Adapts to system preference automatically
+##  Getting Started
 
-SEO & Performance Optimized: Leveraging Next.js capabilities for speed and visibility
+### Prerequisites
 
-Tech Stack
+- Node.js 18+
+- npm or yarn
 
-CodeBase: JavaScript
+### Installation
 
-Framework: Next.js 14
- – React-based, server-side rendering, and SEO friendly
-
-Styling: Tailwind CSS
- – Utility-first styling for responsive design
-
-Font: Inter
- via Google Fonts
-
-Deployment: Vercel
- – Continuous deployment and hosting
-
-Version Control: Git & GitHub – For collaboration and source management
-
-Usage
-
-Visit the live website to explore my portfolio, projects, and contact info.
-
-Clone the repo and run locally to customize it as your own portfolio (see setup instructions below).
-
-Getting Started
-Prerequisites
-
-Node.js 18+
-
-npm or yarn
-
-Installation
-
-Clone the repository:
-
+1. Clone the repository:
+```bash
 git clone https://github.com/KevinZhu223/my-project-site.git
 cd my-project-site
+```
 
-
-Install dependencies:
-
+2. Install dependencies:
+```bash
 npm install
 # or
 yarn install
+```
 
-
-Start the development server:
-
+3. Start the development server:
+```bash
 npm run dev
 # or
 yarn dev
+```
 
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Open http://localhost:3000
- in your browser.
+##  Project Structure
 
- Project Structure
+```
 ├── app/
 │   ├── globals.css        # Global styles and custom CSS
 │   ├── layout.js          # Root layout component
@@ -92,47 +76,41 @@ Open http://localhost:3000
 │   └── ProjectCard.js     # Reusable project showcase card
 ├── public/                # Static assets (images, icons, etc.)
 └── README.md
+```
 
- Key Features
+##  Key Features
 
-Hero Section: Intro with gradient text and call-to-action buttons
+- **Hero Section**: Intro with gradient text and call-to-action buttons
+- **Projects Section**: Grid of featured projects with tech stack tags
+- **About Section**: Background, education, and categorized skills
+- **Footer**: Contact info, social links, and email copy-to-clipboard
 
-Projects Section: Grid of featured projects with tech stack tags
+##  Responsive Design
 
-About Section: Background, education, and categorized skills
+- **Mobile**: Single column, stacked sections
+- **Tablet**: Two-column layout for projects
+- **Desktop**: Full layout with optimized spacing and hover effects
 
-Footer: Contact info, social links, and email copy-to-clipboard
+##  Deployment
 
- Responsive Design
+### Vercel (Recommended)
 
-Mobile: Single column, stacked sections
-
-Tablet: Two-column layout for projects
-
-Desktop: Full layout with optimized spacing and hover effects
-
- Deployment
-Vercel (Recommended)
-
-Push your repo to GitHub
-
-Connect it to Vercel
-
-Deploy automatically with each push to main
+1. Push your repo to GitHub
+2. Connect it to Vercel
+3. Deploy automatically with each push to main
 
 Other supported platforms: Netlify, AWS Amplify, GitHub Pages (static export)
 
- Contact
+##  Contact
 
-Email: kevinzhu2234@gmail.com
+- **Email**: kevinzhu2234@gmail.com
+- **GitHub**: [@KevinZhu223](https://github.com/KevinZhu223)
+- **LinkedIn**: [kevinzhu223](https://linkedin.com/in/kevinzhu223)
 
-GitHub: @KevinZhu223
+##  License
 
-LinkedIn: kevinzhu223
+This project is open source and available under the [MIT License](LICENSE).
 
-📄 License
+---
 
-This project is open source and available under the MIT License
-.
-
- Built with Next.js & Tailwind CSS by Kevin Zhu
+**Built with ❤️ using Next.js & Tailwind CSS by Kevin Zhu**
