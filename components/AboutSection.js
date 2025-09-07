@@ -1,10 +1,9 @@
 export default function AboutSection() {
   return (
-    <section id="about" className="flex flex-col items-center justify-center py-20 bg-white dark:bg-gray-800">
+    <section id="about" className="flex flex-col items-center justify-center py-20 bg-gray-50 dark:bg-gray-900">
       <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm font-medium mb-4">
-            👨‍💻 About Me
           </span>
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
             Get to Know Me

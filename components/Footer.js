@@ -16,14 +16,14 @@ export default function Footer() {
   };
 
   return (
-    <footer className="flex flex-col items-center justify-center bg-gradient-to-r from-slate-900 via-gray-900 to-slate-900 text-white py-16">
+    <footer className="flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white py-16">
       <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium mb-4">
-            🚀 Let&apos;s Connect
+
           </span>
           <h3 className="text-3xl font-bold mb-4">Ready to Work Together?</h3>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
             I&apos;m always open to discussing new opportunities, collaborations, and innovative projects.
           </p>
         </div>
