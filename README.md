@@ -1,149 +1,138 @@
-# Kevin Zhu - Portfolio Website
+Kevin Zhu – Portfolio Website
 
-A modern, responsive portfolio website showcasing my projects and skills as a Software Engineer and Data Scientist.
+A modern, responsive portfolio website built with Next.js and Tailwind CSS, designed to showcase my projects, technical skills, and professional background as a Software Engineer and Data Scientist.
 
-## 🚀 Live Demo
+Live Demo
 
-[View Live Site](https://your-portfolio-url.com) <!-- Update with your actual deployment URL -->
+View Portfolio
+https://my-project-site-nu.vercel.app/
 
-## 📋 Overview
+Overview
 
-This portfolio website features:
-- **Responsive Design**: Optimized for mobile, tablet, and desktop
-- **Modern UI/UX**: Clean, professional design with smooth animations
-- **Project Showcase**: Featured projects with live demos and GitHub links
-- **Interactive Elements**: Hover effects, transitions, and copy-to-clipboard functionality
-- **Dark Mode Support**: Automatic dark/light mode based on system preference
-- **Performance Optimized**: Built with Next.js for fast loading and SEO
+This website serves as a central hub for my professional work, highlighting:
 
-## 🛠️ Tech Stack
+Responsive Design: Optimized for mobile, tablet, and desktop
 
-- **Framework**: [Next.js 14](https://nextjs.org/) (React)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Font**: [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts
-- **Deployment**: [Vercel](https://vercel.com/) (recommended)
-- **Version Control**: Git & GitHub
+Modern UI/UX: Clean layout, smooth animations, and professional styling
 
-## 🎨 Features
+Project Showcase: Featured projects with live demos and GitHub repositories
 
-### Hero Section
-- Professional introduction with gradient text effects
-- Call-to-action buttons with hover animations
-- Quick stats cards with hover effects
+About & Skills: Background, education, and categorized technical skills
 
-### Projects Section
-- Grid layout showcasing 4 featured projects
-- Project cards with consistent styling and hover effects
-- Live demo and GitHub repository links
-- Technology stack tags for each project
+Interactive Elements: Hover effects, transitions, and copy-to-clipboard functionality
 
-### About Section
-- Professional background information
-- Skills categorized by domain (Software Engineering, Data Science)
-- Education details
+Dark Mode Support: Adapts to system preference automatically
 
-### Footer
-- Contact information with copy-to-clipboard email functionality
-- Social media links (GitHub, LinkedIn)
-- Professional footer with copyright
+SEO & Performance Optimized: Leveraging Next.js capabilities for speed and visibility
 
-## 🚀 Getting Started
+Tech Stack
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
+CodeBase: JavaScript
 
-### Installation
+Framework: Next.js 14
+ – React-based, server-side rendering, and SEO friendly
 
-1. Clone the repository:
-```bash
+Styling: Tailwind CSS
+ – Utility-first styling for responsive design
+
+Font: Inter
+ via Google Fonts
+
+Deployment: Vercel
+ – Continuous deployment and hosting
+
+Version Control: Git & GitHub – For collaboration and source management
+
+Usage
+
+Visit the live website to explore my portfolio, projects, and contact info.
+
+Clone the repo and run locally to customize it as your own portfolio (see setup instructions below).
+
+Getting Started
+Prerequisites
+
+Node.js 18+
+
+npm or yarn
+
+Installation
+
+Clone the repository:
+
 git clone https://github.com/KevinZhu223/my-project-site.git
 cd my-project-site
-```
 
-2. Install dependencies:
-```bash
+
+Install dependencies:
+
 npm install
 # or
 yarn install
-```
 
-3. Run the development server:
-```bash
+
+Start the development server:
+
 npm run dev
 # or
 yarn dev
-```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## 📁 Project Structure
+Open http://localhost:3000
+ in your browser.
 
-```
+ Project Structure
 ├── app/
-│   ├── globals.css          # Global styles and custom CSS
-│   ├── layout.js           # Root layout component
-│   └── page.js             # Main page component
+│   ├── globals.css        # Global styles and custom CSS
+│   ├── layout.js          # Root layout component
+│   └── page.js            # Main landing page
 ├── components/
-│   ├── AboutSection.js     # About section component
-│   ├── Footer.js           # Footer with contact links
-│   └── ProjectCard.js      # Reusable project card component
-├── public/                 # Static assets
+│   ├── AboutSection.js    # About section component
+│   ├── Footer.js          # Footer with contact & social links
+│   └── ProjectCard.js     # Reusable project showcase card
+├── public/                # Static assets (images, icons, etc.)
 └── README.md
-```
 
-## 🎯 Key Components
+ Key Features
 
-### ProjectCard
-Reusable component for displaying project information:
-- Project title and description
-- Technology stack tags
-- Live demo and GitHub links
-- Consistent hover animations
+Hero Section: Intro with gradient text and call-to-action buttons
 
-### Footer
-Interactive footer with:
-- Copy-to-clipboard email functionality
-- Social media links
-- Professional styling
+Projects Section: Grid of featured projects with tech stack tags
 
-## 🎨 Styling Approach
+About Section: Background, education, and categorized skills
 
-- **Tailwind CSS**: Utility-first CSS framework
-- **Custom CSS Variables**: Consistent color scheme
-- **Responsive Design**: Mobile-first approach
-- **Smooth Animations**: CSS transitions and hover effects
-- **Professional Typography**: Inter font family
+Footer: Contact info, social links, and email copy-to-clipboard
 
-## 📱 Responsive Design
+ Responsive Design
 
-- **Mobile**: Single column layout, stacked elements
-- **Tablet**: Two-column project grid, optimized spacing
-- **Desktop**: Full layout with optimal spacing and hover effects
+Mobile: Single column, stacked sections
 
-## 🚀 Deployment
+Tablet: Two-column layout for projects
 
-### Vercel (Recommended)
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Deploy automatically on every push to main branch
+Desktop: Full layout with optimized spacing and hover effects
 
-### Other Platforms
-This Next.js app can be deployed on:
-- Netlify
-- AWS Amplify
-- GitHub Pages (with static export)
+ Deployment
+Vercel (Recommended)
 
-## 📧 Contact
+Push your repo to GitHub
 
-- **Email**: kevinzhu2234@gmail.com
-- **GitHub**: [@KevinZhu223](https://github.com/KevinZhu223)
-- **LinkedIn**: [kevin-zhu-lehigh](https://linkedin.com/in/kevin-zhu-lehigh)
+Connect it to Vercel
 
-## 📄 License
+Deploy automatically with each push to main
 
-This project is open source and available under the [MIT License](LICENSE).
+Other supported platforms: Netlify, AWS Amplify, GitHub Pages (static export)
 
----
+ Contact
 
-Built with ❤️ by Kevin Zhu using Next.js & Tailwind CSS
+Email: kevinzhu2234@gmail.com
+
+GitHub: @KevinZhu223
+
+LinkedIn: kevinzhu223
+
+📄 License
+
+This project is open source and available under the MIT License
+.
+
+ Built with Next.js & Tailwind CSS by Kevin Zhu
