@@ -33,8 +33,8 @@ export default function Home() {
     },
     {
       title: "Stock Market Analysis",
-      description: "stock market analysis tool that combines technical analysis, sentiment analysis, and machine learning to analyze stocks and generate trading insights.",
-      techStack: ["Python", "Scikit-learn", "NumPy", "Pandas", "Matplotlib", "Seaborn"],
+      description: "An AI-powered financial analysis tool that detects market regimes (bull, bear, sideways) using machine learning on 30+ technical indicators. Includes an interactive Streamlit dashboard with real-time classification, professional visualizations, and backtesting across multiple assets.",
+      techStack: ["Python", "Scikit-learn", "NumPy", "Pandas", "HMMMlearn", "TA-Lib", "Streamlit", "yfinance", "Plotly"],
       liveUrl: "https://your-taskmanager-demo.com",
       githubUrl: "https://github.com/KevinZhu223/StockMarketAnalysis"
     }
